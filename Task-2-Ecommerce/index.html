@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shadow Mart — Modern Shopping, Reimagined</title>
+  <meta name="description" content="Shadow Mart storefront showcasing advanced filtering, sorting, and a streamlined multi-step checkout." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="Shadow Mart home">
+        <span class="logo-text">SHADOW<span>.MART</span></span>
+      </a>
+      <div class="search-wrap">
+        <i data-lucide="search" class="search-icon" aria-hidden="true"></i>
+        <input id="searchInput" type="search" placeholder="Search products, brands, categories..." aria-label="Search products" />
+        <div id="searchSuggest" class="search-suggest" role="listbox" hidden></div>
+      </div>
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode"><i data-lucide="moon"></i></button>
+        <button class="icon-btn" id="wishlistBtn" aria-label="Open wishlist"><i data-lucide="heart"></i><span class="badge" id="wishlistCount">0</span></button>
+        <button class="icon-btn" id="cartBtn" aria-label="Open cart"><i data-lucide="shopping-bag"></i><span class="badge" id="cartCount">0</span></button>
+      </div>
+    </div>
+    <nav class="cat-strip" aria-label="Categories">
+      <div class="container cat-strip-inner" id="catStrip"></div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">Winter Edition · 2026</span>
+        <h1>The Art of<br /><span class="grad">Modern Mart.</span></h1>
+        <p>A curated selection of refined essentials. Powerful filters, thoughtful sorting, and a checkout that respects your time.</p>
+        <div class="hero-cta">
+          <a href="#plp" class="btn btn-primary">Explore the collection</a>
+          <a href="#plp" class="btn btn-ghost">Browse deals</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+      </div>
+    </div>
+  </section>
+
+  <main id="plp" class="container plp">
+    <button class="btn btn-ghost filter-toggle" id="filterToggle"><i data-lucide="sliders-horizontal"></i> Filters</button>
+    <aside class="filters" id="filtersPanel" aria-label="Product filters">
+      <div class="filters-head">
+        <h2>Filters</h2>
+        <button class="link" id="clearAll">Clear all</button>
+      </div>
+      <section class="filter-group"><h3>Category</h3><div id="fCategory" class="filter-list"></div></section>
+      <section class="filter-group">
+        <h3>Price</h3>
+        <div class="range-wrap">
+          <div class="range-track">
+            <div class="range-fill" id="rangeFill"></div>
+            <input type="range" id="priceMin" min="0" max="500" value="0" aria-label="Minimum price" />
+            <input type="range" id="priceMax" min="0" max="500" value="500" aria-label="Maximum price" />
+          </div>
+          <div class="range-inputs">
+            <label>$<input type="number" id="priceMinNum" min="0" max="500" value="0" /></label>
+            <span>–</span>
+            <label>$<input type="number" id="priceMaxNum" min="0" max="500" value="500" /></label>
+          </div>
+        </div>
+      </section>
+      <section class="filter-group"><h3>Rating</h3><div id="fRating" class="filter-list rating-list"></div></section>
+      <section class="filter-group">
+        <h3>Brand</h3>
+        <div id="fBrand" class="filter-list"></div>
+        <button class="link" id="brandMore" hidden style="margin-top: 8px;">Show more</button>
+      </section>
+      <section class="filter-group"><h3>Color</h3><div id="fColor" class="swatches"></div></section>
+      <section class="filter-group"><h3>Size</h3><div id="fSize" class="pills"></div></section>
+      <section class="filter-group">
+        <label class="switch">
+          <input type="checkbox" id="fStock" />
+          <span class="slider" aria-hidden="true"></span>
+          <span>In stock only</span>
+        </label>
+      </section>
+    </aside>
+
+    <section class="grid-area">
+      <div class="grid-toolbar">
+        <div class="result-count" id="resultCount">Loading…</div>
+        <div class="toolbar-right">
+          <div class="view-toggle" role="group" aria-label="View mode">
+            <button data-view="grid" class="active" aria-label="Grid view"><i data-lucide="layout-grid"></i></button>
+            <button data-view="list" aria-label="List view"><i data-lucide="list"></i></button>
+          </div>
+          <div class="sort-wrap">
+            <label for="sortSelect" class="sr-only">Sort by</label>
+            <select id="sortSelect">
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="rating">Customer Rating</option>
+              <option value="newest">Newest Arrivals</option>
+              <option value="bestselling">Best Selling</option>
+              <option value="name">Name: A–Z</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div id="activeChips" class="chips" aria-live="polite"></div>
+      <div id="productGrid" class="product-grid"></div>
+      <div id="emptyState" class="empty" hidden>
+        <i data-lucide="search-x"></i>
+        <h3>No products match your filters</h3>
+        <p>Try loosening your filters to see more results.</p>
+        <button class="btn btn-primary" id="emptyClear">Clear filters</button>
+      </div>
+      <div class="load-more-wrap">
+        <button id="loadMore" class="btn btn-ghost" hidden>Load more</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-brand">
+      <div class="footer-mark">SHADOW MART</div>
+      <div class="footer-signature">Satyam Kumar</div>
+      <div class="copy">© 2026 Satyam Kumar. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <div class="modal" id="productModal" role="dialog" aria-modal="true" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel">
+      <button class="icon-btn modal-close" data-close aria-label="Close"><i data-lucide="x"></i></button>
+      <div id="productModalBody"></div>
+    </div>
+  </div>
+
+  <aside class="drawer" id="cartDrawer" aria-label="Shopping cart" hidden>
+    <div class="drawer-backdrop" data-close></div>
+    <div class="drawer-panel">
+      <header class="drawer-head"><h3>Your cart</h3><button class="icon-btn" data-close aria-label="Close cart"><i data-lucide="x"></i></button></header>
+      <div class="drawer-body" id="cartLines"></div>
+      <footer class="drawer-foot">
+        <div class="line total"><span>Subtotal</span><span id="cartSubtotal">$0.00</span></div>
+        <button class="btn btn-primary btn-block" id="goCheckout">Proceed to checkout</button>
+      </footer>
+    </div>
+  </aside>
+
+  <aside class="drawer" id="wishDrawer" aria-label="Wishlist" hidden>
+    <div class="drawer-backdrop" data-close></div>
+    <div class="drawer-panel">
+      <header class="drawer-head"><h3>Wishlist</h3><button class="icon-btn" data-close aria-label="Close wishlist"><i data-lucide="x"></i></button></header>
+      <div class="drawer-body" id="wishLines"></div>
+    </div>
+  </aside>
+
+  <div class="checkout" id="checkout" hidden>
+    <div class="container checkout-inner">
+      <button class="link back" id="checkoutBack"><i data-lucide="arrow-left"></i> Continue shopping</button>
+      <ol class="stepper" id="stepper">
+        <li data-step="1"><span>1</span> Cart</li>
+        <li data-step="2"><span>2</span> Shipping</li>
+        <li data-step="3"><span>3</span> Payment</li>
+        <li data-step="4"><span>4</span> Review</li>
+        <li data-step="5"><span>5</span> Done</li>
+      </ol>
+      <div class="checkout-body">
+        <section class="checkout-main" id="stepBody"></section>
+        <aside class="summary" id="summaryCard">
+          <button class="summary-toggle" id="summaryToggle" aria-expanded="false">Order summary <i data-lucide="chevron-down"></i></button>
+          <div class="summary-body" id="summaryBody"></div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <div class="toasts" id="toasts" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
