@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satyam Kumar | Portfolio</title>
+  <meta name="description" content="Official portfolio of Satyam Kumar, BCA student at Institute of Technology & Management (ITM), GIDA, Gorakhpur, and Web Developer focused on AI, cybersecurity, networking, and real-world web projects.">
+  <meta name="keywords" content="Satyam, Satyam Kumar, Portfolio, BCA Student, Web Developer, AI Enthusiast, Cybersecurity Learner, ITM GIDA Gorakhpur, DDU Gorakhpur University, Firebase, Networking, Projects, Certificates, Work">
+  <meta name="author" content="Satyam Kumar">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Satyam Kumar | Portfolio">
+  <meta property="og:description" content="Official portfolio of Satyam Kumar, BCA student at Institute of Technology & Management (ITM), GIDA, Gorakhpur, and Web Developer focused on AI, cybersecurity, networking, and real-world web projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/">
+  <link rel="canonical" href="/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&family=Tiro+Devanagari+Sanskrit&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">SATYAM<span class="dot">.</span></a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <nav class="mobile-drawer" id="mobileDrawer">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#certifications" class="mobile-link">Certifications</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero grid-bg">
+    <div class="radial-vignette"></div>
+    
+    <!-- Rotating Chakra -->
+    <div class="chakra-wrapper">
+      <img src="assets/chakra.png" alt="Chakra decoration" class="chakra-img">
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <div class="shloka-pill">
+        <p class="shloka-text">सत्यांशोऽहं तत्त्वतः पिण्डे कालोऽस्मि स्वयम्भुवः</p>
+        <span class="pill-gradient-line"></span>
+      </div>
+
+      <h1 class="hero-name">
+        <span class="name-first">Satyam</span> <span class="name-last">Kumar</span>
+      </h1>
+
+      <div class="typewriter-container">
+        <span class="typewriter-prefix">I am a</span>
+        <span class="typewriter-text" id="typewriterText"></span>
+        <span class="typewriter-cursor"></span>
+      </div>
+
+      <p class="hero-description">
+        A BCA student at ITM GIDA, Gorakhpur, passionate about Coding, AI, and Cyber Security — building useful things and continuously learning.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Hire Me</a>
+        <a href="resume.pdf" download class="btn btn-secondary">Download CV</a>
+        <a href="https://linkedin.com/in/oyeeesatyam" target="_blank" rel="noopener noreferrer" class="btn btn-tertiary">View LinkedIn</a>
+      </div>
+    </div>
+
+    <button id="scrollCueBtn" class="scroll-cue" aria-label="Scroll to About section">SCROLL ↓</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p class="about-text">
+          I am Satyam Kumar, a passionate BCA student and aspiring Software Engineer specializing in Artificial Intelligence, Full Stack Development, Cybersecurity, and Networking. I focus on creating secure, scalable, and high-performance digital solutions with clean architecture and modern technologies. Driven by continuous learning and innovation, I strive to transform ideas into impactful real-world applications while constantly improving my technical expertise.
+        </p>
+      </div>
+
+      <div class="education-card">
+        <h3 class="subsection-title">Education</h3>
+        <ul class="education-list">
+          <li>
+            <span class="edu-degree">BCA (Bachelor of Computer Applications)</span> 
+            <span class="edu-inst">— Institute of Technology & Management (ITM), GIDA, Gorakhpur (Affiliated to DDU Gorakhpur University)</span> 
+            <span class="edu-year">(2024 – 2027, Pursuing)</span>
+          </li>
+          <li>
+            <span class="edu-degree">12th (Senior Secondary)</span> 
+            <span class="edu-inst">— Govt. Senior Secondary School, Hanumangarh, Rajasthan</span> 
+            <span class="edu-year">(2023)</span>
+          </li>
+          <li>
+            <span class="edu-degree">10th (Secondary)</span> 
+            <span class="edu-inst">— S.V.M Senior Secondary School, Hanumangarh, Rajasthan</span> 
+            <span class="edu-year">(2021)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3 class="skill-title">Cyber Security</h3>
+          <p class="skill-desc">Web security, threat hunting, defensive mechanisms, and ethical hacking fundamentals.</p>
+        </div>
+        <div class="skill-card">
+          <h3 class="skill-title">Full-Stack Development</h3>
+          <p class="skill-desc">Front-end design (React, HTML, CSS, JavaScript) and robust back-end integration.</p>
+        </div>
+        <div class="skill-card">
+          <h3 class="skill-title">Problem Solving</h3>
+          <p class="skill-desc">Data structures, algorithms, query optimization, and technical analytical skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <a href="https://axonai.oyeeesatyam.in/" target="_blank" rel="noopener noreferrer" class="project-card">
+          <div class="project-img-wrapper">
+            <img src="assets/axonai_preview.png" alt="Axon AI Preview" class="project-img">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Axon AI</h3>
+            <p class="project-desc">An immersive AI-powered application delivering real-time interactive solutions and intelligent assistance, demonstrating clean integration of generative models and modern responsive user interfaces.</p>
+            <div class="project-tags">
+              <span class="tag">AI</span>
+              <span class="tag">Neural Networks</span>
+              <span class="tag">Generative Models</span>
+              <span class="tag">Web Development</span>
+            </div>
+            <span class="project-link-text">Visit Project →</span>
+          </div>
+        </a>
+        <a href="https://oyeeesatyam.in/" target="_blank" rel="noopener noreferrer" class="project-card">
+          <div class="project-img-wrapper">
+            <img src="assets/portfolio_preview.png" alt="Portfolio Preview" class="project-img">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-desc">My personal portfolio showcasing skills, projects, and certifications.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <span class="project-link-text">Visit Project →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="certifications">
+    <div class="container">
+      <h2 class="section-title">Certifications</h2>
+      <div class="certs-grid">
+        
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="assets/certs/Ethical_Hacker_certificate_oyeeesatyam-gmail-com.png" alt="Cisco Ethical Hacker" class="cert-img">
+          </div>
+          <h3 class="cert-title">Cisco Ethical Hacker</h3>
+          <p class="cert-org">Cisco Networking Academy</p>
+          <a href="https://www.credly.com/badges/a3bd5f19-29a5-47bf-bc09-f315da3a60c4/public_url" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="assets/certs/google-ai-essentials.jpg" alt="Google AI Essentials" class="cert-img">
+          </div>
+          <h3 class="cert-title">Google AI Essentials Specialization</h3>
+          <p class="cert-org">Google (Coursera)</p>
+          <a href="https://coursera.org/verify/specialization/8W4EGVJA0UYA" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="assets/certs/hackerrank-sql-advanced.jpg" alt="HackerRank SQL (Advanced)" class="cert-img">
+          </div>
+          <h3 class="cert-title">HackerRank SQL (Advanced)</h3>
+          <p class="cert-org">HackerRank</p>
+          <a href="https://www.hackerrank.com/certificates/5279db6a6dbo" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="assets/certs/coursera-excel-skills-business.jpg" alt="Excel Skills for Business" class="cert-img">
+          </div>
+          <h3 class="cert-title">Excel Skills for Business: Essentials</h3>
+          <p class="cert-org">Macquarie University (Coursera)</p>
+          <a href="https://coursera.org/verify/YI7X1PLSA828" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="assets/certs/hp-life-data-science-analytics.jpg" alt="HP LIFE Data Science" class="cert-img">
+          </div>
+          <h3 class="cert-title">HP LIFE Data Science & Analytics</h3>
+          <p class="cert-org">HP Foundation</p>
+          <a href="https://www.hplifeglobal.org/" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="assets/certs/ibm-cybersecurity-fundamentals-2026.jpg" alt="IBM Cybersecurity Fundamentals" class="cert-img">
+          </div>
+          <h3 class="cert-title">IBM Cybersecurity Fundamentals</h3>
+          <p class="cert-org">IBM SkillsBuild</p>
+          <a href="https://www.credly.com/badges/264aea6c-dd5d-44fd-9ece-5f18c2f98a84/public_url" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="assets/certs/ibm-getting-started-cybersecurity-2026.jpg" alt="IBM Getting Started with Cybersecurity" class="cert-img">
+          </div>
+          <h3 class="cert-title">IBM Getting Started with Cybersecurity</h3>
+          <p class="cert-org">IBM SkillsBuild</p>
+          <a href="https://www.credly.com/badges/c70115c2-e7ef-4482-bec4-043284fec7e3/public_url" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="assets/certs/ibm-agile-explorer.jpg" alt="IBM Agile Explorer" class="cert-img">
+          </div>
+          <h3 class="cert-title">IBM Agile Explorer</h3>
+          <p class="cert-org">IBM SkillsBuild</p>
+          <a href="https://www.credly.com/badges/f93b069a-53d3-4218-8c36-55f1145ad4cd/public_url" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="assets/certs/tcs-ion-career-edge.jpg" alt="TCS iON Career Edge" class="cert-img">
+          </div>
+          <h3 class="cert-title">TCS iON Career Edge</h3>
+          <p class="cert-org">TCS iON</p>
+          <a href="https://www.tcsion.com/" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="assets/certs/simplilearn-power-bi-beginners.jpg" alt="Power BI for Beginners" class="cert-img">
+          </div>
+          <h3 class="cert-title">Power BI for Beginners</h3>
+          <p class="cert-org">Microsoft (Simplilearn)</p>
+          <a href="https://www.simplilearn.com/" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="assets/certs/simplilearn-generative-ai-studio.jpg" alt="Introduction to Generative AI Studio" class="cert-img">
+          </div>
+          <h3 class="cert-title">Introduction to Generative AI Studio</h3>
+          <p class="cert-org">Google Cloud (Simplilearn)</p>
+          <a href="https://www.simplilearn.com/" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="assets/certs/cognitive-class-sql-relational-databases-101.jpg" alt="SQL & Relational Databases" class="cert-img">
+          </div>
+          <h3 class="cert-title">SQL & Relational Databases 101</h3>
+          <p class="cert-org">Cognitive Class / IBM Skills Network</p>
+          <a href="https://courses.cognitiveclass.ai/certificates/c34bd2d092b1483b87aa2d67c42cd060" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="assets/certs/cisco-network-fundamentals.jpg" alt="Cisco Network Support & Security" class="cert-img">
+          </div>
+          <h3 class="cert-title">Cisco Network Support & Security Specialization</h3>
+          <p class="cert-org">Cisco (Coursera)</p>
+          <a href="https://coursera.org/verify/specialization/RBJQ7K3PJSQE" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="assets/certs/cisco-network-architecture.jpg" alt="Cisco Network Architecture" class="cert-img">
+          </div>
+          <h3 class="cert-title">Cisco Network Architecture</h3>
+          <p class="cert-org">Cisco (Coursera)</p>
+          <a href="https://coursera.org/verify/9LPIII7H62RO" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="assets/certs/cisco-network-management.jpg" alt="Network Management Approaches" class="cert-img">
+          </div>
+          <h3 class="cert-title">Network Management Approaches</h3>
+          <p class="cert-org">Cisco (Coursera)</p>
+          <a href="https://coursera.org/verify/W42CIVTGJUTE" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="assets/certs/cisco-network-fundamentals.jpg" alt="Overview of Important Protocols" class="cert-img">
+          </div>
+          <h3 class="cert-title">Overview of Important Protocols</h3>
+          <p class="cert-org">Cisco (Coursera)</p>
+          <a href="https://coursera.org/verify/2IBGLHMWWENA" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="assets/certs/google-intro-to-ai.jpg" alt="Google Introduction to AI" class="cert-img">
+          </div>
+          <h3 class="cert-title">Google Introduction to AI</h3>
+          <p class="cert-org">Google (Coursera)</p>
+          <a href="https://coursera.org/verify/W6LQP74YUD9B" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="assets/certs/google-discover-prompting.jpg" alt="Google Discover Art of Prompting" class="cert-img">
+          </div>
+          <h3 class="cert-title">Google Discover Art of Prompting</h3>
+          <p class="cert-org">Google (Coursera)</p>
+          <a href="https://coursera.org/verify/LWYTMDSVXEEQ" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="assets/certs/google-use-ai-responsibly.jpg" alt="Google Use AI Responsibly" class="cert-img">
+          </div>
+          <h3 class="cert-title">Google Use AI Responsibly</h3>
+          <p class="cert-org">Google (Coursera)</p>
+          <a href="https://coursera.org/verify/MTWG51P9L2BW" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="assets/certs/kaggle-community-member.png" alt="Kaggle Community Member" class="cert-img">
+          </div>
+          <h3 class="cert-title">Kaggle Community Member</h3>
+          <p class="cert-org">Kaggle</p>
+          <a href="https://www.kaggle.com/oyeeesatyam" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="cyan-divider"><span class="circle-dot"></span></div>
+        <p class="contact-subtitle">
+          There are some fields I have mentioned that help to get you in touch with me. You can also leave a message by the message option.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info column -->
+        <div class="contact-info-col">
+          <ul class="contact-info-list">
+            <li>
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" class="info-svg"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </span>
+              <span class="info-text">Gorakhpur, Uttar Pradesh, India</span>
+            </li>
+            <li>
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" class="info-svg"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              </span>
+              <span class="info-text"><a href="tel:+917976004501" class="info-link">+91 7976004501</a></span>
+            </li>
+            <li>
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" class="info-svg"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </span>
+              <span class="info-text"><a href="mailto:oyeeesatyam@gmail.com" class="info-link">oyeeesatyam@gmail.com</a></span>
+            </li>
+            <li>
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" class="info-svg"><path fill="currentColor" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </span>
+              <span class="info-text"><a href="https://linkedin.com/in/oyeeesatyam" target="_blank" rel="noopener noreferrer" class="info-link">My Linkedin</a></span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Form column -->
+        <div class="contact-form-col">
+          <form id="contactForm" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="contactName" placeholder="Name*" required autocomplete="name">
+                <span class="focus-border"></span>
+              </div>
+              <div class="form-group">
+                <input type="email" id="contactEmail" placeholder="Email*" required autocomplete="email">
+                <span class="focus-border"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea id="contactMessage" placeholder="Message*" rows="5" required></textarea>
+              <span class="focus-border"></span>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn-submit" id="submitBtn">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Star background simulation -->
+    <div class="star-decorations">
+      <span class="star star-1"></span>
+      <span class="star star-2"></span>
+      <span class="star star-3"></span>
+      <span class="star star-4"></span>
+      <span class="star star-5"></span>
+      <span class="star star-6"></span>
+      <span class="star star-7"></span>
+      <span class="star star-8"></span>
+      <span class="star star-9"></span>
+      <span class="star star-10"></span>
+    </div>
+
+    <div class="footer-content">
+      <h3 class="footer-logo">SATYAM</h3>
+
+      <div class="social-links">
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/in/oyeeesatyam" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn">
+          <svg viewBox="0 0 24 24" class="social-icon"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.36 4.26 5.43v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z" /></svg>
+        </a>
+        <!-- Twitter -->
+        <a href="https://twitter.com/oyeeesatyam" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="social-btn">
+          <svg viewBox="0 0 24 24" class="social-icon"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://instagram.com/l.l_satyam_l.l" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-btn">
+          <svg viewBox="0 0 24 24" class="social-icon"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.21 8.8 2.2 12 2.2M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.9 5.9 0 0 0-2.13 1.39A5.9 5.9 0 0 0 .62 4.15C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.8.72 1.47 1.39 2.13a5.9 5.9 0 0 0 2.13 1.39c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.13-1.39 5.9 5.9 0 0 0 1.39-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.39-2.13A5.9 5.9 0 0 0 19.86.63C19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 12 18.16 6.16 6.16 0 0 0 12 5.84zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z" /></svg>
+        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/oyeeesatyam" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn">
+          <svg viewBox="0 0 24 24" class="social-icon"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.52-1.32-1.28-1.67-1.28-1.67-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.03 11.03 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.41-5.25 5.69.41.35.78 1.05.78 2.12v3.15c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z" /></svg>
+        </a>
+      </div>
+
+      <p class="cursive-signature">Satyam Kumar</p>
+
+      <p class="copyright">
+        © <span id="copyrightYear">2026</span> Satyam Kumar. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- Firebase Contact Form Script -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAVwp7PPfztYPlBAEroxaCeietGFQC8AmA",
+      authDomain: "satyam-portfolio-54ff8.firebaseapp.com",
+      projectId: "satyam-portfolio-54ff8",
+      storageBucket: "satyam-portfolio-54ff8.firebasestorage.app",
+      messagingSenderId: "777287080472",
+      appId: "1:777287080472:web:34e1876a230b797322416d",
+      measurementId: "G-2Q4LZL5BBZ"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    // Form submission handler
+    document.addEventListener("DOMContentLoaded", () => {
+      const contactForm = document.getElementById("contactForm");
+      if (contactForm) {
+        contactForm.addEventListener("submit", async (e) => {
+          e.preventDefault();
+          
+          const submitBtn = document.getElementById("submitBtn");
+          const originalText = submitBtn.textContent;
+          submitBtn.disabled = true;
+          submitBtn.textContent = "Sending...";
+
+          const name = document.getElementById("contactName").value;
+          const email = document.getElementById("contactEmail").value;
+          const message = document.getElementById("contactMessage").value;
+
+          try {
+            await addDoc(collection(db, "contacts"), {
+              name: name,
+              email: email,
+              message: message,
+              timestamp: new Date().toISOString()
+            });
+            
+            if (typeof Swal !== "undefined") {
+              Swal.fire({
+                title: "Message Sent!",
+                text: "Thank you, Satyam will get back to you soon.",
+                icon: "success",
+                confirmButtonColor: "#22d3ee",
+                background: "#050b14",
+                color: "#fff"
+              });
+            } else {
+              alert("Message sent successfully!");
+            }
+            contactForm.reset();
+          } catch (error) {
+            console.error("Error adding document: ", error);
+            if (typeof Swal !== "undefined") {
+              Swal.fire({
+                title: "Error!",
+                text: "Failed to send message: " + error.message,
+                icon: "error",
+                confirmButtonColor: "#ef4444",
+                background: "#050b14",
+                color: "#fff"
+              });
+            } else {
+              alert("Failed to send message: " + error.message);
+            }
+          } finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText;
+          }
+        });
+      }
+    });
+  </script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
